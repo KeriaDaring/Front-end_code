@@ -1,0 +1,47 @@
+#nav {
+    display: flex;
+}
+
+
+.drop {
+    color: white;
+    background-color: rgb(235, 107, 3);
+    padding: 10px;
+    visibility: hidden;
+}
+
+.list:hover .drop {
+    visibility: visible;
+}
+
+
+
+#nav div:hover {
+    color: #3399cc;
+}
+
+#nav div:hover menu {
+    color: #3399cc;
+}
+
+
+#find {
+    padding-top: 20px;
+    width: 35px;
+    height: 25px;
+}
+
+.input {
+    visibility: hidden;
+}
+
+#find:hover .input {
+    visibility: visible;
+}
+
+#nav>div {
+    width: 170px;
+    margin: 20px;
+    text-align: center;
+}
+

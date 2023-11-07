@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <header>
+        <div class="line">
+            <span><hr></span>
+        </div>
+        <div id="title">
+            <span><h2>学生信息管理系统</h2></span>
+        </div>
+        <div class="line">
+            <span><hr></span>
+        </div>
+    </header>
+
+    <nav>
+        <div id="control1">
+            <input id="bu_one" type="button" value="新增">
+            <input id="bu_two" type="button" value="删除">
+        </div>
+    </nav>
+
+
+    <section>
+        <form action="">
+            <table>
+                <tr class="grey_cell" style="height: 60px; font-weight: 900;">
+                    <td><input type="checkbox"></td>
+                    <td>序号</td>
+                    <td>学号</td>
+                    <td>姓名</td>
+                    <td>学院</td>
+                    <td>专业</td>
+                    <td>年纪</td>
+                    <td>班级</td>
+                    <td>年龄</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><span id="one" class="text">查看</span> <span id="two" class="text">修改</span></td>
+                </tr>
+                <tr class="grey_cell">
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="grey_cell">
+                    <td><input type="checkbox"></td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="grey_cell">
+                    <td><input type="checkbox"></td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="grey_cell">
+                    <td><input type="checkbox"></td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="grey_cell">
+                    <td><input type="checkbox"></td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <div>
+        <span>第1页，共27页,(每页显示10条)</span>
+        <div id="control2">
+            <input id="bu_five" type="button" value="上一条">
+            <input id="bu_six" type="button" value="下一条">
+        </div>
+    </div>
+    
+    <div class="mini_mask">
+        <div class="mini_content_win">
+            <div id="mini_nav">
+                新增学生信息
+            </div>
+            <div class="input_part">
+                <div>
+                    <div>
+                        学号&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        姓名&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        学院&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        专业&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        年级&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        班级&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+                    <div>
+                        年龄&nbsp;&nbsp;<input type="text"><br>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            <hr>
+            <div id="control3">
+                <input id="bu_four" type="button" value="提交">
+                <input id="bu_three" type="button" value="取消">
+            </div>
+        </div>
+    </div>
+    <script src="./js/show.js"></script>
+
+</body>
+</html>
