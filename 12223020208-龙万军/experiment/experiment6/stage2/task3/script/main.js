@@ -10,9 +10,14 @@ for (let i = 1; i <= 9; i++) {
 }
 
 document.querySelector('#square').addEventListener('click', (event) => {
-    let target = event.target.closest('tr');
+    let target = event.target.closest('td');
     if (target) {
         target.style.backgroundColor = 'red';
+        let list = target.querySelectorAll('div');
+
+        for (let i in list) {
+            list[i].style.color = 'white';
+        }
     }
     
 });
