@@ -1,0 +1,45 @@
+* {
+    font-size: 14px;
+}
+
+a img {
+    border: none;
+}
+
+#control_slide {
+    width: 360px;
+    height: 29px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    background-color: #5899ce;
+}
+
+#control_slide li {
+    float: left;
+    width: 45px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #5899ce;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+#control_slide li a {
+    text-decoration: none;
+    color: #003276;
+    cursor: pointer;
+}
+
+#control_slide li.current a {
+    color: white;
+}
+
+.new_img {
+    width: 360px;
+    height: 220px;
+}
+
+li {
+    list-style-type: none;
+}
