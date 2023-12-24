@@ -1,0 +1,7 @@
+{
+  "name": "期末工程考核",
+  "version": "1.0.0",
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}

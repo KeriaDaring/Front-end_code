@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <header>
+        <div class="line">
+            <span><hr></span>
+        </div>
+        <div id="title">
+            <span><h2>学生信息管理系统</h2></span>
+        </div>
+        <div class="line">
+            <span><hr></span>
+        </div>
+    </header>
+
+    <nav>
+        <div class="control" id="control1">
+            <input id="bu_one" type="button" value="新增">
+            <input id="bu_two" type="button" value="删除">
+        </div>
+    </nav>
+
+
+    <section>
+        <div id="outer">
+            <form>
+                <table>
+                    <tr style="height: 60px; font-weight: 900;background-color: #dadee1">
+                        <td><label for="selectAll"></label><input id="selectAll" type="checkbox"></td>
+                        <td>序号</td>
+                        <td>学号</td>
+                        <td>姓名</td>
+                        <td>学院</td>
+                        <td>专业</td>
+                        <td>年级</td>
+                        <td>班级</td>
+                        <td>年龄</td>
+                        <td>操作</td>
+                    </tr>
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">1</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><div style="display: inline;"><span  class="text look">查看</span> <span  class="text modify">修改</span></div></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">2</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">3</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">4</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">5</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">6</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">7</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">8</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span  class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">9</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                    <!--                <tr>-->
+                    <!--                    <td><label>-->
+                    <!--                        <input name="select" type="checkbox">-->
+                    <!--                    </label></td>-->
+                    <!--                    <td class="num">10</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>4</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>2</td>-->
+                    <!--                    <td>3</td>-->
+                    <!--                    <td><span class="text look">查看</span> <span  class="text modify">修改</span></td>-->
+                    <!--                </tr>-->
+                </table>
+            </form>
+        </div>
+    </section>
+    <div id="below_form">
+        <span id="msg">第1页，共27页，(每页显示10条)</span>
+        <div class="control" id="control2">
+            <input id="bu_five" type="button" value="上一页">
+            <input id="bu_six" type="button" value="下一页">
+        </div>
+    </div>
+
+    <form>
+        <div class="mini_mask">
+            <div class="mini_content_win">
+                <div id="mini_nav">
+                    新增学生信息
+                </div>
+                <div class="input_part">
+                    <div>
+                        <div>
+                            <label for="num">学号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="num" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="name">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="name" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="depart">学院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="depart" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="major">专业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="major" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="grade">年级&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="grade" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="course">班级&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="course" type="text"><br>
+                        </div>
+                        <div>
+                            <label for="age">年龄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="in" id="age" type="text"><br>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr style="border: 0.001rem solid grey">
+                <div class="control" id="control3">
+                    <input id="bu_four" type="button" value="提交">
+                    <input id="bu_three" type="button" value="取消">
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./script/show.js"></script>
+
+</body>
+</html>

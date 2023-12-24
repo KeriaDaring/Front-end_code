@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* margin: 0 200px; */
+    background-color: #f7f6f4;
+    font-family: "Microsoft YaHei", serif;
+}
+
+nav {
+    /* position: sticky; */
+    grid-area: nav;
+    top: 0;
+    z-index: 1000;
+}
+main {
+    grid-area: main;
+}
+
+
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    grid-template-areas: 
+           "nav nav nav"
+           "main main main"
+           "section section section"
+           "footer footer footer" ;
+}
+
+li {
+    user-select: none;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    text-shadow: 0 0 10px gold, 0 0 40px gold;
+}
+
+
+.bac {
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: calc(100vw/11);
+    line-height: calc(100vw/11);
+    background: url("../imgs/head.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.opt {
+    min-width: 20px;
+    width: 14%;
+}
+
+.icon {
+    /* background-color: red; */
+    align-items: center;
+    width: 17%;
+}
+/*.opt:hover .opt_in>li {*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*}*/
+
+#list_on {
+    min-width: 20px;
+    width: 14%;
+}
+
+#show_pane {
+    margin-bottom: 3%;
+    position: relative;
+    width: 100%;
+    height: calc(45vw);
+    background-size: cover;
+}
+
+
+.arrow {
+    position: absolute;
+    user-select: none;
+    -webkit-user-drag: none;
+    display: inline;
+    cursor: pointer;
+    top: 35%;
+    z-index: 20;
+}
+
+#arrow_left {
+    float: left;
+}
+
+#arrow_right {
+    right: 0;
+    float: right;
+}
+
+.arrow>img {
+    width: calc(100vw/20);
+    height: calc(100vw/10);
+}
+
+
+footer {
+    background-color: #68311b;
+    bottom: 0;
+    height: 100px;
+    
+    /* position: absolute; */
+    background: url("../imgs/head.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* #container {
+    min-height: 100vh;
+} */
+/* #content {
+    background-color: #f7f6f4;
+    padding-bottom: 18rem;
+} */
+
+
+#msg {
+    display: flex;
+    /* background-color: red; */
+    position: relative;
+    top: 20%;
+    width: 50%;
+    left: 10%;
+}
+
+#orange_img_div {
+    position: relative;
+    /* top: 28%;
+    left: 10%; */
+}
+
+#address {
+    display: inline-block;
+    position: relative;
+    /* left: 10%;
+    top: 25%; */
+    /* width: calc(100vw/10); */
+    padding-left: 7%;
+    color: white;
+}
+
+#address>div {
+    font-size: 0.8vw;
+    padding: 2px 0;
+}
+
+#number {
+    position: relative;
+    /* top: 25%;
+    left: 70%; */
+    left: 60%;
+}
+
+#number>div {
+    display: flex;
+    padding: 4px 0;
+    color: white;
+    font-size: 0.8vw;
+    text-decoration: inherit;
+    width: 100%;
+}
+
+
+#number>div img {
+    height: calc(100vw/11/6);
+    width: calc(100vw/11/6);
+}
+
+#orange_img {
+    width: 6vw;
+}
+
+section {
+    grid-area: section;
+}
+
+section #wait {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: calc(30vw);
+    background: url("../imgs/敬请期待.png") no-repeat;
+    background-size: cover;
+}
+
+.view {
+    margin: 0 10.3vw;
+}
+
+.title_two {
+    display: flex;
+}
+
+.title_two>div {
+    font-weight: 800;
+    text-align: center;
+    min-width: 100px;
+    width: 50%;
+}
+
+#triangle {
+    width: 24px;
+}
+
+#food_nav {
+    padding: 8px;
+    border: 1px solid dodgerblue;
+    display: flex;
+}
+
+#food_nav>div {
+    font-size: small;
+    text-align: center;
+    padding-right: 14px;
+}
+
+.row_sec {
+    display: flex;
+}
+
+#intro_sec {
+    cursor: default;
+    user-select: none;
+    position: absolute;
+    z-index: 40;
+    top: 105%;
+    left: 35.3%;
+    visibility: hidden;
+    width: 51%;
+    height: 30%;
+    background-color: #f7f6f4;
+    padding: 0 20px;
+}
+
+.intro_sec {
+    row-gap: 0;
+}
+
+#hover_show:hover +#intro_sec {
+    visibility: visible;
+}
+#intro_sec:hover {
+    visibility: visible;
+}
+
+#intro_sec p {
+    font-size: small;
+    text-indent: 2em;
+}
+
+.row_sec>div {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.row_thr {
+    height: 10%;
+    display: flex;
+}
+.row_thr img {
+    height: 100%;
+}
+
+.intro_thr {
+    min-width: 180px;
+    margin: 5% 5%;
+}
+
+#col_forth {
+    margin: 0 200px;
+}
+
+#col_fifth {
+    /* background-color: red; */
+    display: flex;
+    margin: 0 30px;
+    margin-bottom: 100px;
+}
+/* #col_fifth>div {
+    align-items: center;
+} */
+
+#mini_mask {
+    position: fixed;
+    width: 70%;
+    height: 50%;
+    top: 20%;
+    left: 13%;
+    display: none;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100001;
+}
+#mini_window {
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 2%;
+    width: 100%;
+}
+#cancel {
+    font-family: sans-serif;
+    color: white;
+    font-size: small;
+    padding-top: 2px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1000000;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    /*background-color: red;*/
+    width: 22px;
+    height: 20px;
+    left: 98.5%;
+    top: -88%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.img1 {
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#p_left{
+    margin-top: 50px;
+    flex: 2;
+    font-size: small;
+    text-align: right;
+}
+
+#middle {
+    text-align: center;
+    flex: 1;
+}
+
+#p_right {
+    margin-top: 240px;
+    flex: 2;
+    font-size: small;
+}
+
+#col_fifth p {
+    margin: 7px 0;
+}
+
+.p_title {
+    font-weight: 800;
+}
+
+#list {
+    visibility: hidden;
+    color: white;
+    position: relative;
+    background-color: #965237;
+    z-index: 100;
+    text-align: center;
+}
+
+
+#list_one:hover {
+    background-color: white;
+}
+#list_one:hover  #li_one{
+    color: black;
+}
+
+#list_two:hover {
+    background-color: white;
+}
+#list_two:hover  #li_two{
+    color: black;
+}
+
+
+
+#list li {
+    user-select: none;
+    line-height: 30px;
+    height: 30px;
+}

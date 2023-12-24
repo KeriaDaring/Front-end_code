@@ -1,0 +1,47 @@
+html {
+    background: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));
+    width: 100%;
+    max-height: 500px;
+}
+
+#animate_item {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+}
+
+.slide_circle {
+    animation-name: slide_circle;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+}
+
+@keyframes slide_circle {
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    25% {
+        transform: rotate(90deg);
+        margin-left: calc(100vw - 200px);
+        margin-top: 0;
+    }
+    50% {
+        transform: rotate(180deg);
+        margin-left: calc(100vw - 200px);
+        margin-top: calc(100vh - 200px);
+    }
+    75% {
+        transform: rotate(270deg);
+        margin-left: 0;
+        margin-top: calc(100vh - 200px);
+    }
+    100% {
+        transform: rotate(360deg);
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+}

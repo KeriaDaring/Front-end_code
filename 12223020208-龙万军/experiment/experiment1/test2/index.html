@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+
+
+
+    <script src="https://cdn.tiny.cloud/1/2264my5akhq6jidirr69paf1gpg197jgy0p5g2b20vthkll1/tinymce/6/tinymce.min.js"
+        referrerpolicy="www.my_muti_text.com"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea'
+        });
+    </script>
+    <link rel="stylesheet" href="./css//index.css">
+
+</head>
+
+<body>
+    <form class="main">
+        <div class="title">
+            <div class="text">产品基本信息</div>
+        </div>
+        <hr>
+
+        <section>
+            <div class="part1">
+
+                <p>
+                    <label class="item" for="name"><span class="head_char">*&nbsp;</span>产品名称</label>
+                    <img class="icon" src="../test2/imgs/question.jpg" alt="">
+                    <input style="width: 315px;" type="text" id="name" placeholder="如：PU女士手提包（CK12002）" required><br>
+                </p>
+
+                <p>
+                    <label class="item" for="class"><span style="color: transparent;">*&nbsp;</span>产品型号</label>
+                    <img class="icon" src="../test2/imgs/question.jpg" alt="">
+                    <input type="text" id="class">
+                </p>
+
+                <label class="item"><span class="head_char">*&nbsp;</span>产品图片</label>
+                <img class="icon" src="../test2/imgs/question.jpg" alt="">
+                &nbsp;&nbsp;
+                <input type="radio" name="choice" checked>上传单张图片
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="choice">上传多张图片
+
+                <div style="padding-left: 180px;">
+                    <input type="button" value="本地上传">
+                    <input type="button" value="从图片库选取">
+                </div>
+                <br>
+                <small style="padding-left: 180px;">-最多添加10个多图产品，每个多图产品最多展示6张图片。</small>
+                <br>
+                <small style="padding-left: 180px; ">-jpg或ipeg格式；不超过300kb。</small>
+
+                <div style="padding-top: 30px;">
+                    <label style="font-size: medium; padding-left: 97px;" for="words"><span class="head_char">*&nbsp;</span>关键词</label>
+
+                    <img class="icon" src="../test2/imgs/question.jpg" alt="">
+                    <input type="text" id="words">
+                    <a class="url" href="#">关键词建议</a>
+                    <div style="padding-left: 180px;">
+                        <br>
+                        <a class="url" href="#">➕添加更多关键词</a>
+                        <br>
+                        <br>
+                        <small>-请在每个文本框中输入一个用于描述您产品的关键词，并控刻在48个字符以内。</small>
+                    </div>
+                </div>
+
+                <p>
+                    <label class="item" for="class"><span
+                            class="head_char">&nbsp;&nbsp;&nbsp;*&nbsp;</span>产品类别</label>&nbsp;
+                    <input type="button" value="选择目录">&nbsp;
+                    <small style="color: black;">找不到想要的目录？</small>
+                    <a class="url" href="#">点这里。</a>
+                </p>
+
+
+                <p>
+                    <label class="item" for="class"><span
+                            style="color: transparent;">&nbsp;&nbsp;&nbsp;*&nbsp;</span>产品分组</label>&nbsp;
+                    <select name="select" id="" style="width: 150px;">
+                        <option><small>请选择产品组</small></option>
+                    </select>
+                </p>
+
+                <p>
+                    <label class="item" for="name"><span class="head_char">*&nbsp;</span>产品描述<img class="icon"
+                            src="../test2/imgs/question.jpg" alt=""></label>
+                    &nbsp;&nbsp;
+                    <input type="radio" name="choice1" checked>富文本&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="choice1">纯文本
+                    <span style="padding-left: 5px;"><small>&nbsp;&nbsp;&nbsp;您已提交23个富文本产品，还可以提交97。</small></span>
+                </p>
+
+            </div>
+
+
+            <div class="multi_text">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <p>
+                    <small>-最多100个产品可使用富文本模式编辑，每个产品最多可以在抽述里插入3张图片；jpg或jpeg格式；不超过300k。</small>
+                </p>
+                <p style="padding-bottom: 30px;">
+                    <small>-文本内容控刻在60-4000个字符内</small>
+                </p>
+            </div>
+
+        </section>
+
+        <div class="title">
+            <div class="text">产品贸易<img class="icon" src="../test2/imgs/question.jpg" alt=""><span
+                    style="padding-left: 10px;"><small>详细填写您的报价，让其更易被买家关注。</small></span></div>
+        </div>
+        <hr>
+
+        <section>
+            <div class="part">
+                <p class="with_url">
+                    <label class="item" for="name"><span class="head_char">*&nbsp;</span>最小起订量</label>
+                    <input type="text">
+                    <select name="chart" style="width: 80px;" id="">
+                        <option value="">个</option>
+                        <option value="">件</option>
+                    </select>
+                    <label class="item" for="name"><span class="head_char">*&nbsp;</span>FOB价格（USD）</label>
+                    <input type="text">
+                    <select name="chart" style="width: 80px;" id="">
+                        <option value="">个</option>
+                        <option value="">件</option>
+                    </select>
+                </p>
+
+                <div>
+                    <a id="price_url" style="padding-left: 160px;" class="url" href="#">➕添加更多关键词</a>
+                </div>
+
+                <p>
+                    <label style="padding-left: 120px;" for="name">港口</label>
+                    <input type="text">
+                </p>
+
+                <p>
+                    <label class="item" for="class"><span
+                            class="head_char">&nbsp;&nbsp;&nbsp;*&nbsp;</span>支付方式</label>&nbsp;
+                    <input type="checkbox">&nbsp;<small>L/C</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>T/T</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>D/P</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>Paypal</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>Money Gram</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>Westem Union</small>
+                    &nbsp;&nbsp;
+                    <input type="checkbox">&nbsp;<small>Others</small>
+                </p>
+            </div>
+
+
+        </section>
+
+        <div class="title">
+            <div class="text">展示字段自定义<img class="icon" src="../test2/imgs/question.jpg" alt=""><span
+                    style="padding-left: 10px;"><small>可以从产品属性、自定义属性、交易条件中选择2个自定义信息用于展示厅产品介绍页面的优先展示。</small></span>
+            </div>
+        </div>
+        <hr>
+
+        <section>
+            <div class="part">
+                <p>
+                    <label class="item" for="class"><span
+                            style="color: white;">&nbsp;&nbsp;&nbsp;*&nbsp;</span>交易条件</label>&nbsp;
+                    &nbsp;
+                    <input type="checkbox"><small>&nbsp;港口</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;支付方式</small>
+                </p>
+                <p>
+                    <label class="item" for="class"><span
+                            style="color: white;">&nbsp;&nbsp;&nbsp;*&nbsp;</span>产品属性</label>&nbsp;
+                    &nbsp;
+                    <input type="checkbox"><small>&nbsp;外观</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;应用</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;成分</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;目标市场</small>
+                </p>
+
+
+                <p>
+                    <label class="item" for="name"><span style="color: white;">*&nbsp;</span>自定义属性</label>
+                    &nbsp;
+                    <input type="checkbox"><small>&nbsp;FOB</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;CFR</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;CIF</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;DAT</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;FAS</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;DDP</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;DAP</small>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox"><small>&nbsp;FOB</small>
+
+                </p>
+            </div>
+
+        </section>
+    </form>
+
+</body>
+
+</html>
