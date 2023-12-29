@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <div id="pane">
+
+        <div>
+            <div><label for="user">用户名:</label></div>
+            <input pattern=".{6,}" id="user" type="text"><span class="char">*</span>&nbsp;
+            <div class="prompt"><div class="ban"><span class="hr"><hr></span></div><span class="content">请输入正确的用户名</span></div>
+        </div>
+        <div>
+            <div><label for="mail">邮箱:</label></div>
+            <input id="mail" type="email"><span class="char">*</span>&nbsp;
+            <div class="prompt"><div class="ban"><span class="hr"><hr></span></div><span class="content">请输入正确的E-Mail地址</span></div>
+        </div>
+
+        <div>
+            <div><label for="profile">个人资料:</label></div>
+            <input id="profile" type="text">&nbsp;&nbsp;<br>
+        </div>
+        <div>
+            <div id="control"><input tabindex="0" type="submit" value="提交">&nbsp;&nbsp;<input tabindex="0" type="button" value="重置">&nbsp;&nbsp;</div>
+        </div>
+    </div>
+</form>
+
+
+<br>
+
+
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="./script/login.js"></script>
+
+</body>
+</html>

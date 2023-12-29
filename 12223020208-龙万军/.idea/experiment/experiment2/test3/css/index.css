@@ -1,0 +1,65 @@
+body{width:1366px;height:auto;overflow:script;margin:0 auto;}
+
+#nav {
+    display: flex;
+}
+
+#nav>div {
+    cursor: pointer;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu>div {
+    width: 100px;
+}
+
+
+.drop {
+    color: white;
+    background-color: rgb(235, 107, 3);
+    padding: 10px;
+    visibility: hidden;
+}
+
+.list:hover .drop {
+    visibility: visible;
+}
+
+
+
+#nav div:hover {
+    color: #3399cc;
+}
+
+#nav div:hover menu {
+    color: #3399cc;
+}
+
+#search {
+    display: flex;
+}
+
+#find {
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 114px;
+
+}
+
+.input {
+    height: 20px;
+    visibility: hidden;
+}
+
+#find:hover  +.input {
+    visibility: visible;
+}
+.input:hover {
+    visibility: visible;
+}
+
+

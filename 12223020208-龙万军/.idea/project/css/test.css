@@ -1,0 +1,39 @@
+#title {
+    text-align: center;
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+
+#middle {
+    font-size: medium;
+    font-weight: 900;
+    line-height: 38px;
+    color: #68311b;
+    text-align: center;
+    width: 10%;
+    min-width: 75px;
+}
+
+#title hr {
+    border: 1px solid #68311a;
+    width: 98%;
+    display: inline-block;
+}
+.spot {
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+    line-height: 40px;
+    width: 2%;
+    color: #68311a;
+}
+
+.hr {
+    height: 30px;
+    line-height: 33px;
+    width: 43%;
+}

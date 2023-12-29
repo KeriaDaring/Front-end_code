@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="frm_1">
+        <fieldset>
+            <legend>爱好</legend>
+            <input type="checkbox" name="multi_select" value="internet">上网
+            <input type="checkbox" name="multi_select" value="reading">阅读
+            <input type="checkbox" name="multi_select" value="games">游戏
+            <input type="checkbox" name="multi_select" value="sports">运动
+            <input type="checkbox" name="multi_select" value="shopping">购物
+        </fieldset>
+        <input id="one" type="button" value="全选" onclick="selectAll()">
+        <input id="two" type="button" value="反选" onclick="selectReverse()">
+        <input id="three" type="button" value="取消" onclick="selectNone()">
+    
+    </form>
+    <script src="./script/main.js"></script>
+</body>
+</html>

@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    
-    <span id="clock">
-
-    </span>
-    <script src="./script/main.js"></script>
-    <button onclick="int=window.clearInterval(int)">
-
-    </button>
-
-
-    
+    <span id="clock"></span>
+    <script language=javascript>
+        var int = self.setInterval("clock()", 50)
+        function clock() {
+            var t = new Date()
+            document.getElementById("clock").innerText
+                = t
+        }
+    </script>
+    <button onclick="int=window.clearInterval(int)">Stop interval</button>
 </body>
+
 </html>

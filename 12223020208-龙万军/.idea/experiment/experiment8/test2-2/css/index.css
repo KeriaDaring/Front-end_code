@@ -1,0 +1,40 @@
+
+
+#pane {
+    width: 100%;
+    display: flex;
+    margin-left: 45px;
+    align-items: center;
+}
+
+#pane>div {
+    /* padding-left: 20px; */
+    width: 100px;
+    cursor: pointer;
+}
+
+#one:last-child {
+    background-color: red;
+}
+
+.list {
+    height: 180px;
+    border: 1px solid black;
+}
+
+#two {
+    margin-left: 80px;
+}
+
+
+
+.button {
+    text-align: center;
+    width: 180px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: grey;
+}

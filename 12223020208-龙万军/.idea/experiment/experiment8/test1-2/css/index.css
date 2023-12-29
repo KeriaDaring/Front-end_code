@@ -1,0 +1,14 @@
+#menu {
+    width: 300px;
+}
+
+#menu span {
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+#menu .hidden {
+    display: none;
+}

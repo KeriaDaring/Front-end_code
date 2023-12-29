@@ -1,0 +1,88 @@
+* {
+    font-family: "JetBrains Mono";
+    font-size: small;
+}
+
+label {
+    color: grey;
+}
+
+
+hr {
+    margin-top: 10px;
+    width: 60%;
+    color: white;
+    border: 1px solid white;
+}
+.prompt {
+    height: 25px;
+    line-height: 25px;
+    min-width: 130px;
+    display: flex;
+    background-color: #ffe0e9;
+    visibility: hidden;
+}
+
+
+.ban {
+    margin-left: 5px;
+    margin-right: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 25px;
+    height: 25px;
+    line-height: 15px;
+    background-color: red;
+    border-radius: 25px;
+}
+
+
+.right {
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    min-width: 25px;
+    min-height: 25px;
+    line-height: 25px;
+    background-color: #1afa29;
+    border-radius: 25px;
+}
+
+#pane>div {
+    padding: 4px 0;
+    display: flex;
+}
+#pane>div>div {
+
+    text-align: right;
+    min-width: 80px;
+}
+#pane>div>input {
+    max-width: 160px;
+}
+.char {
+    height: 9px;
+    line-height: 30px;
+    padding-left: 4px;
+    color: red;
+}
+
+span {
+    color: #807ca9;
+}
+
+#control {
+    padding-left: 80px;
+}
+
+input:focus {
+    border: 0.3px solid cornflowerblue;
+}
+
+
+.hr {
+    color: white;
+}

@@ -1,0 +1,39 @@
+*{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    margin-top: 60px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 31px;
+}
+.div1{
+    margin: 0;
+}
+.date{
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+.table_name{
+    background-color: #bf0101;
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+}
+.table_tip{
+    background-color: #bf0101;
+    text-align: right;
+    color: aliceblue;
+}
+
+.table{
+    background-color: black;
+}
+.cell{
+    background-color: #fbe9db;
+    text-align: center;
+    height: 38px;
+}

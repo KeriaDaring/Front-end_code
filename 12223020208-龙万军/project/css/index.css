@@ -61,6 +61,18 @@ li {
     width: 14%;
 }
 
+.opt:hover {
+    background-color: white;
+    
+}
+.opt:hover li {
+    color: black;
+}
+
+#list_on .opt {
+    width: inherit;
+}
+
 .icon {
     /* background-color: red; */
     align-items: center;
@@ -400,4 +412,9 @@ section #wait {
     user-select: none;
     line-height: 30px;
     height: 30px;
+}
+
+#intro_seven {
+    text-indent: 2em;
+    margin-bottom: 200px;
 }
